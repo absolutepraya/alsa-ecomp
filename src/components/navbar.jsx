@@ -11,40 +11,36 @@ export default function NavBar() {
       <div className="flex items-center justify-between gap-x-8 text-lg">
         <a
           href="#"
-          className=" text-primary"
+          className="text-primary"
         >
           Home
         </a>
         <a
-          href="#"
-          className=" text-primary"
+          href="/about"
+          className="text-primary"
         >
           About Us
         </a>
         <a
-          href="#"
-          className=" text-primary"
+          href="/competitions"
+          className="text-primary"
         >
           Competitions
         </a>
         <a
-          href="#"
-          className=" text-primary"
+          href="/timeline"
+          className="text-primary"
         >
           Timeline
         </a>
         <a
-          href="#"
-          className=" text-primary"
+          href="/partners"
+          className="text-primary"
         >
           Partners
         </a>
-        <a href="#">
-          <Emboss
-            innerClassName="px-3 py-0.5 text-lg rounded-full"
-          >
-            Registration
-          </Emboss>
+        <a href="registration">
+          <Emboss innerClassName="px-3 py-0.5 text-lg rounded-full">Registration</Emboss>
         </a>
       </div>
     </div>

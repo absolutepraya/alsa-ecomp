@@ -1,18 +1,28 @@
 import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
+import Footer from '@/components/footer';
+import GoldText from '@/components/goldtext';
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen items-center justify-center">
+    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[380px]">
       <NavBar />
-      <Emboss
-        innerClassName="text-lg rounded-2xl flex-col gap-y-3 px-16 py-16"
-      >
-        <p className="w-full text-center">Element 1</p>
-        <p className="w-full text-center">Element 2</p>
-        <p className="w-full text-center">Element 3</p>
-        <p className="w-full text-center">Element 4</p>
-      </Emboss>
+
+      <div className="flex min-h-screen w-full flex-col items-center justify-center">
+        <img
+          src="logo.svg"
+          alt="ALSA English Competition 2025"
+          className="h-[30rem] w-[30rem]"
+        />
+
+        <img
+          src="title.webp"
+          alt="ALSA English Competition 2025"
+          className="h-[10rem]"
+        />
+      </div>
+
+      <Footer />
     </div>
   );
 }

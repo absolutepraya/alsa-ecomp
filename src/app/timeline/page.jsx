@@ -1,5 +1,3 @@
-'use client';
-
 import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
 import Footer from '@/components/footer';

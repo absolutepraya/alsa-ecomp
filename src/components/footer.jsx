@@ -63,7 +63,12 @@ export default function Footer() {
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
-          <p className="">(alsa-twitter)</p>
+          <a
+            href="https://x.com/alsaecomp"
+            className="underline decoration-[1px] underline-offset-[3px]"
+          >
+            @alsaecomp
+          </a>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />

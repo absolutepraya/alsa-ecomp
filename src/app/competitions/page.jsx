@@ -13,10 +13,14 @@ import GoldText from '@/components/goldtext';
 
 export default function Competitions() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-12 px-0 pt-36">
+    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[380px] pt-36">
       <NavBar />
 
-      <GoldText text='COMPETITIONS' className='text-6xl font-extrabold' />
+      <GoldText
+        text="COMPETITIONS"
+        className="text-6xl font-extrabold"
+      />
+
       <Swiper
         modules={[Navigation, Pagination]}
         className="relative flex h-[600px] w-full items-center justify-center"

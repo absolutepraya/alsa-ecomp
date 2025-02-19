@@ -5,7 +5,7 @@ import Emboss from '@/components/emboss';
 import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
 
-export default function About() {
+export default function Partners() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
       <NavBar />

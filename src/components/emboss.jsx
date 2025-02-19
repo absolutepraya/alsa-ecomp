@@ -1,4 +1,4 @@
-export default function Emboss({ children, innerClassName = '', outerClassName = '' }) {
+export default function Emboss({ children, innerClassName = '', outerClassName = '', toPercent='', viaPercent='' }) {
 	let outerRadius = '';
 
   // Check the innerClassName for various rounded classes
@@ -32,10 +32,8 @@ export default function Emboss({ children, innerClassName = '', outerClassName =
   }
 
 	return (
-    <div className={`bg-gradient-to-b from-secondary to-tertiary to-60% px-[7px] py-[7px] text-foreground shadow-[0_0_5px_rgba(0,0,0,0.7)] ${outerClassName} ${outerRadius}`}>
-      <div className={`bg-primary shadow-[0_0_2px_rgba(0,0,0,0.6)] ${innerClassName}`}>
-        {children}
-      </div>
+    <div className={`bg-gradient-to-b from-secondary to-tertiary ${toPercent ? toPercent : 'to-60%'} px-[7px] py-[7px] text-foreground shadow-[0_0_5px_rgba(0,0,0,0.7)] ${outerClassName} ${outerRadius}`}>
+      <div className={`bg-primary shadow-[0_0_2px_rgba(0,0,0,0.6)] ${innerClassName}`}>{children}</div>
     </div>
   );
 }

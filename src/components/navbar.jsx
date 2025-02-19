@@ -10,7 +10,7 @@ export default function NavBar() {
       />
       <div className="flex items-center justify-between gap-x-12 text-lg">
         <a
-          href="#"
+          href="/"
           className="text-primary"
         >
           Home

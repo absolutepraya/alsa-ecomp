@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <div
           className="absolute inset-0 -z-10 bg-repeat opacity-30"
           style={{
-            backgroundImage: "url('/texture.png')",
+            backgroundImage: "url('/texture.webp')",
             backgroundSize: '500px',
           }}
         />

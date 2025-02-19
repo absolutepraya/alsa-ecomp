@@ -20,13 +20,13 @@ export default function Partners() {
         />
       </BlurFade>
 
-      <div className="flex h-[30rem] w-full max-w-[70rem] justify-between gap-x-20">
+      <div className="flex h-[30rem] w-full max-w-[70rem] justify-between">
         <BlurFade
           delay={0.4}
           offset={15}
           inView
         >
-          <div className="flex h-full w-1/2 flex-col items-center">
+          <div className="flex h-full w-full flex-col items-center">
             <p className="text-4xl text-primary">Sponsorship & In-Kind</p>
           </div>
         </BlurFade>
@@ -35,7 +35,7 @@ export default function Partners() {
           offset={15}
           inView
         >
-          <div className="flex h-full w-1/2 flex-col items-center">
+          <div className="flex h-full w-full flex-col items-center">
             <p className="text-4xl text-primary">Media Partners</p>
           </div>
         </BlurFade>

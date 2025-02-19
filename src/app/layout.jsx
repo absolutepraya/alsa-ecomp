@@ -1,4 +1,5 @@
 import './globals.css';
+import Head from 'next/head';
 
 export const metadata = {
   title: 'ALSA English Competition 2025',
@@ -11,6 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href="/texture.webp"
+          as="image"
+          type="image/webp"
+        />
+      </head>
       <body className={`bg-background relative font-kaisar font-bold antialiased`}>
         <div
           className="absolute inset-0 -z-10 bg-repeat opacity-30"

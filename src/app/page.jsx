@@ -7,7 +7,6 @@ export default function Home() {
       <NavBar />
       <Emboss
         innerClassName="text-lg rounded-2xl flex-col gap-y-3 px-16 py-16"
-        outerClassName="rounded-xl"
       >
         <p className="w-full text-center">Element 1</p>
         <p className="w-full text-center">Element 2</p>

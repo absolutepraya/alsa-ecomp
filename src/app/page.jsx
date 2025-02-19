@@ -7,10 +7,8 @@ import BlurFade from '@/components/blurfade';
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[380px]">
-      <NavBar currentRoute="home" />
-
-      <div className="flex min-h-screen w-full flex-col items-center justify-center">
+    <div className="relative flex h-screen flex-col items-center gap-y-20 overflow-x-clip px-0">
+      <div className="flex h-full w-full flex-col items-center justify-center">
         <BlurFade
           delay={0.3}
           offset={15}
@@ -38,8 +36,6 @@ export default function Home() {
           />
         </BlurFade>
       </div>
-
-      <Footer />
     </div>
   );
 }

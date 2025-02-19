@@ -1,5 +1,7 @@
+import NavBar from '@/components/navbar';
 import './globals.css';
 import Head from 'next/head';
+import Footer from '@/components/footer';
 
 export const metadata = {
   title: 'ALSA English Competition 2025',
@@ -14,12 +16,12 @@ export const metadata = {
   //     as: 'image',
   //     type: 'image/webp',
   //   },
-    // 'link-preload-2': {
-    //   rel: 'preload',
-    //   href: '/public/texture.webp',
-    //   as: 'image',
-    //   type: 'image/webp',
-    // },
+  // 'link-preload-2': {
+  //   rel: 'preload',
+  //   href: '/public/texture.webp',
+  //   as: 'image',
+  //   type: 'image/webp',
+  // },
   // },
 };
 
@@ -41,6 +43,7 @@ export default function RootLayout({ children }) {
         /> */}
       </Head>
       <body className={`relative bg-background font-kaisar font-bold antialiased`}>
+        <NavBar />
         <div
           className="absolute inset-0 -z-10 bg-repeat opacity-30"
           style={{
@@ -48,7 +51,9 @@ export default function RootLayout({ children }) {
             backgroundSize: '500px',
           }}
         />
-        {children}
+        <div>{children}</div>
+
+        <Footer />
       </body>
     </html>
   );

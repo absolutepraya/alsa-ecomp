@@ -2,7 +2,7 @@ import GoldText from './goldtext';
 
 export default function Footer() {
   return (
-    <div className="bg-background flex w-full flex-col items-center gap-y-5 py-5 text-foreground">
+    <div className="bg-background flex w-full flex-col items-center gap-y-5 py-5 text-foreground absolute bottom-0">
       <GoldText
         text="Contact Person"
         className="text-3xl font-extrabold"

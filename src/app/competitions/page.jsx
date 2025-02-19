@@ -3,29 +3,35 @@
 import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { competitionsData } from './data';
 import Footer from '@/components/footer';
+import GoldText from '@/components/goldtext';
 
 export default function Competitions() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-12 px-0 pt-36">
       <NavBar />
 
-      <p className="text-5xl">COMPETITIONS</p>
-
+      <GoldText text='COMPETITIONS' className='text-6xl font-extrabold' />
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Pagination]}
         className="relative flex h-[600px] w-full items-center justify-center"
         slidesPerView={1}
         centeredSlides={true}
         centeredSlidesBounds={true}
-        loop={true}
         navigation={{
           nextEl: '.swiper-next',
           prevEl: '.swiper-prev',
+        }}
+        pagination={{
+          clickable: true,
+          el: '.swiper-cust-pagination',
+          bulletClass: '.swiper-cust-bullet',
+          bulletActiveClass: '.swiper-cust-bullet-active',
         }}
       >
         {competitionsData.map((competition, index) => (
@@ -45,8 +51,17 @@ export default function Competitions() {
           </SwiperSlide>
         ))}
 
-        <div className="swiper-prev absolute left-[15%] top-24 z-10 flex h-20 w-20 items-center justify-center rounded-full bg-gold cursor-pointer">X</div>
-        <div className="swiper-next absolute right-[15%] top-24 z-10 flex h-20 w-20 items-center justify-center rounded-full bg-gold cursor-pointer">X</div>
+        <div className="swiper-prev absolute left-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold">X</div>
+        <div className="swiper-next absolute right-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold">X</div>
+
+        {/* <div className="swiper-cust-pagination absolute bottom-0 left-1/2 flex -translate-x-1/2 transform gap-x-2">
+          {competitionsData.map((_, index) => (
+            <div
+              key={index}
+              className="swiper-cust-bullet h-2 w-2 rounded-full bg-primary"
+            />
+          ))}
+        </div> */}
       </Swiper>
 
       <Footer />

@@ -2,7 +2,7 @@ import Emboss from "./emboss";
 
 export default function NavBar() {
   return (
-    <div className="absolute top-0 flex h-20 w-full items-center justify-between bg-foreground px-16">
+    <div className="absolute top-0 flex h-20 w-full items-center justify-between bg-foreground px-16 shadow-xl">
       <img
         src="logo.svg"
         alt="ALSA English Competition 2025"

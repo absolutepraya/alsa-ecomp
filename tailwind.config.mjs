@@ -9,6 +9,7 @@ const config = {
 		extend: {
 			fontFamily: {
 				kaisar: ['Kaisar', 'Arial', 'Helvetica', 'sans-serif'],
+				tmr: ['Times New Roman']
 			},
 			colors: {
 				primary: '#003140',

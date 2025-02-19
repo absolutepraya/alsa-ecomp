@@ -8,7 +8,7 @@ export default function NavBar() {
         alt="ALSA English Competition 2025"
         className="h-[88px] w-[88px]"
       />
-      <div className="flex items-center justify-between gap-x-8 text-lg">
+      <div className="flex items-center justify-between gap-x-12 text-lg">
         <a
           href="#"
           className="text-primary"

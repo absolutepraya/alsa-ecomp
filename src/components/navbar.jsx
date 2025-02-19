@@ -1,12 +1,15 @@
 import Emboss from './emboss';
+import Image from 'next/image';
 
 export default function NavBar({ currentRoute }) {
   return (
     <div className="fixed top-0 !z-[100] flex h-20 w-full items-center justify-between bg-foreground px-16 shadow-xl">
-      <img
-        src="logo.svg"
+      <Image
+        src="/logo.svg"
         alt="ALSA English Competition 2025"
-        className="h-[88px] w-[88px]"
+        width={88}
+        height={88}
+        priority={true}
       />
       <div className="flex items-center justify-between gap-x-12 text-lg">
         <a

@@ -10,16 +10,23 @@ import 'swiper/css/pagination';
 import { competitionsData } from './data';
 import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
+import BlurFade from '@/components/blurfade';
 
 export default function Competitions() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[380px] pt-36">
       <NavBar currentRoute="competitions" />
 
-      <GoldText
-        text="COMPETITIONS"
-        className="text-6xl font-extrabold"
-      />
+      <BlurFade
+        delay={0.3}
+        offset={15}
+        inView
+      >
+        <GoldText
+          text="COMPETITIONS"
+          className="text-6xl font-extrabold"
+        />
+      </BlurFade>
 
       <Swiper
         modules={[Navigation, Pagination]}
@@ -38,25 +45,70 @@ export default function Competitions() {
           bulletActiveClass: '.swiper-cust-bullet-active',
         }}
       >
-        {competitionsData.map((competition, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative h-full w-full">
-              <div className="absolute left-1/2 top-1/2 flex h-full w-[700px] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-y-6">
-                <div className="h-56 w-56 rounded-full bg-goldlight" />
-                <p className="text-4xl text-primary">{competition.title}</p>
-                <Emboss
-                  innerClassName="px-6 py-3 rounded-xl text-justify"
-                  toPercent="to-40%"
-                >
-                  <p>{competition.desc}</p>
-                </Emboss>
+        {competitionsData.map((competition, index) =>
+          index === 0 ? (
+            <SwiperSlide key={index}>
+              <div className="relative h-full w-full">
+                <div className="absolute left-1/2 top-1/2 flex h-full w-[700px] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-y-6">
+                  <BlurFade
+                    delay={0.4}
+                    offset={15}
+                    inView
+                  >
+                    <div className="h-56 w-56 rounded-full bg-goldlight" />
+                  </BlurFade>
+                  <BlurFade
+                    delay={0.5}
+                    offset={15}
+                    inView
+                  >
+                    <p className="text-4xl text-primary">{competition.title}</p>
+                  </BlurFade>
+                  <BlurFade
+                    delay={0.6}
+                    offset={15}
+                    inView
+                  >
+                    <Emboss
+                      innerClassName="px-6 py-3 rounded-xl text-justify"
+                      toPercent="to-40%"
+                    >
+                      <p>{competition.desc}</p>
+                    </Emboss>
+                  </BlurFade>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          ) : (
+            <SwiperSlide key={index}>
+              <div className="relative h-full w-full">
+                <div className="absolute left-1/2 top-1/2 flex h-full w-[700px] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-y-6">
+                  <div className="h-56 w-56 rounded-full bg-goldlight" />
+                  <p className="text-4xl text-primary">{competition.title}</p>
+                  <Emboss
+                    innerClassName="px-6 py-3 rounded-xl text-justify"
+                    toPercent="to-40%"
+                  >
+                    <p>{competition.desc}</p>
+                  </Emboss>
+                </div>
+              </div>
+            </SwiperSlide>
+          )
+        )}
 
-        <div className="swiper-prev absolute left-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold"></div>
-        <div className="swiper-next absolute right-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold"></div>
+        <BlurFade
+          delay={0.7}
+          offset={15}
+          inView
+          className={'swiper-prev absolute left-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold'}
+        ></BlurFade>
+        <BlurFade
+          delay={0.7}
+          offset={15}
+          inView
+          className={'swiper-next absolute right-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold'}
+        ></BlurFade>
 
         {/* <div className="swiper-cust-pagination absolute bottom-0 left-1/2 flex -translate-x-1/2 transform gap-x-2">
           {competitionsData.map((_, index) => (

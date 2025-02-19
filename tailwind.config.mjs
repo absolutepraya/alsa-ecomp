@@ -16,6 +16,7 @@ export default {
 				tertiary: '#000910',
 				quaternary: '#294881',
 				foreground: '#c3deeb',
+				background: '#294881',
 				gold: '#d3c14b',
 				goldlight: '#f2e883',
 				golddark: '#ac9b42'

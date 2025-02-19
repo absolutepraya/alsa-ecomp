@@ -11,7 +11,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`font-kaisar font-bold antialiased`}>{children}</body>
+      <body className={`bg-background relative font-kaisar font-bold antialiased`}>
+        <div
+          className="absolute inset-0 -z-10 bg-repeat opacity-30"
+          style={{
+            backgroundImage: "url('/texture.png')",
+            backgroundSize: '500px',
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

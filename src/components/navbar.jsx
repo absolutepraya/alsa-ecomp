@@ -1,6 +1,6 @@
 import Emboss from "./emboss";
 
-export default function NavBar() {
+export default function NavBar({ currentRoute }) {
   return (
     <div className="fixed top-0 flex h-20 w-full items-center justify-between bg-foreground px-16 shadow-xl !z-[100]">
       <img
@@ -11,31 +11,31 @@ export default function NavBar() {
       <div className="flex items-center justify-between gap-x-12 text-lg">
         <a
           href="/"
-          className="text-primary"
+          className={`text-primary ${currentRoute === 'home' ? 'underline decoration-2 underline-offset-[5px]' : ''}`}
         >
           Home
         </a>
         <a
           href="/about"
-          className="text-primary"
+          className={`text-primary ${currentRoute === 'about' ? 'underline decoration-2 underline-offset-[5px]' : ''}`}
         >
           About Us
         </a>
         <a
           href="/competitions"
-          className="text-primary"
+          className={`text-primary ${currentRoute === 'competitions' ? 'underline decoration-2 underline-offset-[5px]' : ''}`}
         >
           Competitions
         </a>
         <a
           href="/timeline"
-          className="text-primary"
+          className={`text-primary ${currentRoute === 'timeline' ? 'underline decoration-2 underline-offset-[5px]' : ''}`}
         >
           Timeline
         </a>
         <a
           href="/partners"
-          className="text-primary"
+          className={`text-primary ${currentRoute === 'partners' ? 'underline decoration-2 underline-offset-[5px]' : ''}`}
         >
           Partners
         </a>

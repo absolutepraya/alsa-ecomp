@@ -7,7 +7,7 @@ import Line from '@/components/line';
 export default function Timeline() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
-      <NavBar />
+      <NavBar currentRoute="timeline" />
 
       <GoldText
         text="TIMELINE"

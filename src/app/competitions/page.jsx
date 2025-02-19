@@ -14,7 +14,7 @@ import GoldText from '@/components/goldtext';
 export default function Competitions() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[380px] pt-36">
-      <NavBar />
+      <NavBar currentRoute="competitions" />
 
       <GoldText
         text="COMPETITIONS"

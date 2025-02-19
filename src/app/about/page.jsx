@@ -6,7 +6,7 @@ import GoldText from '@/components/goldtext';
 export default function About() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
-      <NavBar />
+      <NavBar currentRoute='about' />
 
       <GoldText
         text="ABOUT US"

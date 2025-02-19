@@ -6,7 +6,7 @@ import GoldText from '@/components/goldtext';
 export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[380px]">
-      <NavBar />
+      <NavBar currentRoute='home' />
 
       <div className="flex min-h-screen w-full flex-col items-center justify-center">
         <img

@@ -55,8 +55,8 @@ export default function Competitions() {
           </SwiperSlide>
         ))}
 
-        <div className="swiper-prev absolute left-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold">X</div>
-        <div className="swiper-next absolute right-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold">X</div>
+        <div className="swiper-prev absolute left-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold"></div>
+        <div className="swiper-next absolute right-[15%] top-24 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold"></div>
 
         {/* <div className="swiper-cust-pagination absolute bottom-0 left-1/2 flex -translate-x-1/2 transform gap-x-2">
           {competitionsData.map((_, index) => (

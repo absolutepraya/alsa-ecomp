@@ -2,7 +2,7 @@ import GoldText from './goldtext';
 
 export default function Footer() {
   return (
-    <div className="bg-background flex w-full flex-col items-center gap-y-5 py-5 text-foreground absolute bottom-0">
+    <div className="bg-background absolute bottom-0 flex w-full flex-col items-center gap-y-5 py-5 text-foreground">
       <GoldText
         text="Contact Person"
         className="text-3xl font-extrabold"
@@ -50,17 +50,12 @@ export default function Footer() {
       <div className="mt-2 flex w-full flex-row items-center justify-center gap-x-4">
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
-          <a
-            href="#"
-            className="underline decoration-[1px] underline-offset-[3px]"
-          >
-            @alsaecomp
-          </a>
+          <p className="">@alsaecomp</p>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
           <a
-            href="#"
+            href="https://www.youtube.com/@alsalcuiofficial"
             className="underline decoration-[1px] underline-offset-[3px]"
           >
             ALSA LC UI
@@ -68,17 +63,12 @@ export default function Footer() {
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
-          <a
-            href="#"
-            className="underline decoration-[1px] underline-offset-[3px]"
-          >
-            (alsa-twitter)
-          </a>
+          <p className="">(alsa-twitter)</p>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
           <a
-            href="#"
+            href="https://www.instagram.com/alsalcui/"
             className="underline decoration-[1px] underline-offset-[3px]"
           >
             @alsaecomp
@@ -87,7 +77,7 @@ export default function Footer() {
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
           <a
-            href="#"
+            href="https://www.alsaecomp.com"
             className="underline decoration-[1px] underline-offset-[3px]"
           >
             alsaecomp.com

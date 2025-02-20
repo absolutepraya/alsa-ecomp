@@ -1,11 +1,12 @@
 import GoldText from './goldtext';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <div className="flex w-full flex-col items-center gap-y-5 bg-background py-5 text-foreground">
       <GoldText
         text="Contact Person"
-        className="text-md font-extrabold text-3xl"
+        className="text-md text-3xl font-extrabold"
       />
 
       <div className="flex w-full flex-col justify-center gap-4 gap-x-6 lg:flex-row">
@@ -49,11 +50,25 @@ export default function Footer() {
 
       <div className="mt-2 grid w-full grid-cols-2 gap-4 px-16 lg:flex lg:flex-row lg:justify-center lg:gap-x-4">
         <div className="flex flex-row items-center gap-x-1 text-xs">
-          <div className="h-7 w-7 rounded-full bg-gold" />
+          <div className="h-8 w-8 rounded-full">
+            <Image
+              src="/social/1.webp"
+              width={32}
+              height={32}
+              alt="LINE ALSA LC UI"
+            />
+          </div>
           <p className="">@alsaecomp</p>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
-          <div className="h-7 w-7 rounded-full bg-gold" />
+          <div className="h-8 w-8 rounded-full">
+            <Image
+              src="/social/2.webp"
+              width={32}
+              height={32}
+              alt="YouTube ALSA LC UI"
+            />
+          </div>
           <a
             href="https://www.youtube.com/@alsalcuiofficial"
             className="underline decoration-[1px] underline-offset-[3px]"
@@ -62,7 +77,14 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
-          <div className="h-7 w-7 rounded-full bg-gold" />
+          <div className="h-8 w-8 rounded-full">
+            <Image
+              src="/social/3.webp"
+              width={32}
+              height={32}
+              alt="X ALSA LC UI"
+            />
+          </div>
           <a
             href="https://x.com/alsaecomp"
             className="underline decoration-[1px] underline-offset-[3px]"
@@ -71,7 +93,14 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
-          <div className="h-7 w-7 rounded-full bg-gold" />
+          <div className="h-8 w-8 rounded-full">
+            <Image
+              src="/social/4.webp"
+              width={32}
+              height={32}
+              alt="Instagram ALSA LC UI"
+            />
+          </div>
           <a
             href="https://www.instagram.com/alsalcui/"
             className="underline decoration-[1px] underline-offset-[3px]"
@@ -80,7 +109,14 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
-          <div className="h-7 w-7 rounded-full bg-gold" />
+          <div className="h-8 w-8 rounded-full">
+            <Image
+              src="/social/5.webp"
+              width={32}
+              height={32}
+              alt="Website ALSA LC UI"
+            />
+          </div>
           <a
             href="https://www.alsaecomp.com"
             className="underline decoration-[1px] underline-offset-[3px]"

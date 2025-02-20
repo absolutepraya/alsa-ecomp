@@ -10,11 +10,10 @@ export default function Partners() {
       <BlurFade
         delay={0.3}
         offset={15}
-        inView
       >
         <GoldText
           text="PARTNERS"
-          className="text-6xl font-extrabold"
+          className="text-5xl font-extrabold lg:text-6xl"
         />
       </BlurFade>
 
@@ -22,7 +21,6 @@ export default function Partners() {
         <BlurFade
           delay={0.4}
           offset={15}
-          inView
         >
           <div className="flex h-full w-full flex-col items-center">
             <p className="text-3xl text-primary lg:text-4xl">Sponsorship & In-Kind</p>
@@ -31,7 +29,6 @@ export default function Partners() {
         <BlurFade
           delay={0.5}
           offset={15}
-          inView
         >
           <div className="flex h-full w-full flex-col items-center">
             <p className="text-4xl text-primary">Media Partners</p>

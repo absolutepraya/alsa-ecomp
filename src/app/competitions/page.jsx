@@ -14,15 +14,14 @@ import BlurFade from '@/components/blurfade';
 
 export default function Competitions() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 py-36 lg:pb-[380px]">
+    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pt-36 lg:pb-[380px]">
       <BlurFade
         delay={0.3}
         offset={15}
-        inView
       >
         <GoldText
           text="COMPETITIONS"
-          className="text-4xl font-extrabold lg:text-6xl"
+          className="text-5xl font-extrabold lg:text-6xl"
         />
       </BlurFade>
 
@@ -51,21 +50,18 @@ export default function Competitions() {
                   <BlurFade
                     delay={0.4}
                     offset={15}
-                    inView
                   >
                     <div className="h-56 w-56 rounded-full bg-goldlight" />
                   </BlurFade>
                   <BlurFade
                     delay={0.5}
                     offset={15}
-                    inView
                   >
                     <p className="text-4xl text-primary">{competition.title}</p>
                   </BlurFade>
                   <BlurFade
                     delay={0.6}
                     offset={15}
-                    inView
                   >
                     <Emboss
                       innerClassName="px-6 py-3 rounded-xl text-justify"
@@ -108,14 +104,12 @@ export default function Competitions() {
       <BlurFade
         delay={0.7}
         offset={15}
-        inView
-        className={'swiper-prev absolute bottom-10 left-20 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold lg:left-[15%] lg:top-24'}
+        className={'swiper-prev absolute bottom-12 left-20 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold lg:left-[15%] lg:top-24'}
       ></BlurFade>
       <BlurFade
-        delay={0.7}
+        delay={0.8}
         offset={15}
-        inView
-        className={'swiper-next absolute bottom-10 right-20 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold lg:right-[15%] lg:top-24'}
+        className={'swiper-next absolute bottom-12 right-20 z-10 flex h-20 w-20 cursor-pointer items-center justify-center rounded-full bg-gold lg:right-[15%] lg:top-24'}
       ></BlurFade>
     </div>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
 import Footer from '@/components/footer';
@@ -6,15 +8,14 @@ import BlurFade from '@/components/blurfade';
 
 export default function About() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 overflow-x-clip px-0 py-36">
+    <div className="relative flex min-h-screen flex-col items-center lg:gap-y-20 gap-y-12 overflow-x-clip lg:px-0 px-6 py-36">
       <BlurFade
         delay={0.3}
         offset={15}
-        inView
       >
         <GoldText
           text="ABOUT US"
-          className="text-4xl font-extrabold lg:text-6xl"
+          className="font-extrabold lg:text-6xl text-5xl"
         />
       </BlurFade>
 
@@ -22,7 +23,6 @@ export default function About() {
         <BlurFade
           delay={0.4}
           offset={15}
-          inView
         >
           <GoldText
             text="Our Theme:"
@@ -32,7 +32,6 @@ export default function About() {
         <BlurFade
           delay={0.5}
           offset={15}
-          inView
         >
           <GoldText
             text="Protecting Biodiversity"
@@ -42,9 +41,8 @@ export default function About() {
         <BlurFade
           delay={0.6}
           offset={15}
-          inView
         >
-          <p className="lg:text-md mt-4 max-w-[50rem] px-4 text-justify text-sm text-foreground">The importance of biodiversity cannot be understated. The food we eat, the clothes we wear, and even the air we breathe is all the result of a healthy biodiversity. Unfortunately, over the last few years, human activity has caused a massive decline, with activities such as the clearing of forests for commercial use, overexploitation of natural resources, and all highly destructive towards biodiversity. Because of this, it is important for us to be aware of our responsibility to preserve and protect biodiversity, as its destruction could mean the destruction of mankind as a whole.</p>
+          <p className="text-md mt-4 max-w-[50rem] px-4 text-justify text-foreground">The importance of biodiversity cannot be understated. The food we eat, the clothes we wear, and even the air we breathe is all the result of a healthy biodiversity. Unfortunately, over the last few years, human activity has caused a massive decline, with activities such as the clearing of forests for commercial use, overexploitation of natural resources, and all highly destructive towards biodiversity. Because of this, it is important for us to be aware of our responsibility to preserve and protect biodiversity, as its destruction could mean the destruction of mankind as a whole.</p>
         </BlurFade>
       </div>
 
@@ -52,7 +50,6 @@ export default function About() {
         <BlurFade
           delay={0.7}
           offset={15}
-          inView
         >
           <GoldText
             text="Our Tagline:"
@@ -62,7 +59,6 @@ export default function About() {
         <BlurFade
           delay={0.8}
           offset={15}
-          inView
         >
           <GoldText
             text="Embrace Humanity, Protect Biodiversity"
@@ -82,9 +78,8 @@ export default function About() {
         <BlurFade
           delay={0.9}
           offset={15}
-          inView
         >
-          <p className="lg:text-md mt-4 max-w-[50rem] px-4 text-justify text-sm text-foreground">Our tagline refers to the goal of our event. As our future champions continue to learn and evolve as they progress through our competitions, we hope that the knowledge they have gained will give them the empathy needed to build a realization for their role in protecting the biodiversity around us. As human activity continues to destroy the world around us, this year's ALSA E-Comp brings on the theme of Protecting Biodiversity in hopes of preserving it.</p>
+          <p className="text-md mt-4 max-w-[50rem] px-4 text-justify text-foreground">Our tagline refers to the goal of our event. As our future champions continue to learn and evolve as they progress through our competitions, we hope that the knowledge they have gained will give them the empathy needed to build a realization for their role in protecting the biodiversity around us. As human activity continues to destroy the world around us, this year's ALSA E-Comp brings on the theme of Protecting Biodiversity in hopes of preserving it.</p>
         </BlurFade>
       </div>
     </div>

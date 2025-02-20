@@ -28,7 +28,7 @@ export default function Competitions() {
 
       <Swiper
         modules={[Navigation]}
-        className="relative flex h-screen w-full items-center justify-center lg:h-[600px]"
+        className="relative flex h-[740px] w-full items-center justify-center lg:h-[600px]"
         slidesPerView={1}
         centeredSlides={true}
         centeredSlidesBounds={true}
@@ -103,7 +103,7 @@ export default function Competitions() {
         )}
       </Swiper>
 
-      <div>
+      <div className='flex flex-row items-center justify-center gap-x-16 lg:gap-x-0'>
         <BlurFade
           delay={0.7}
           offset={15}

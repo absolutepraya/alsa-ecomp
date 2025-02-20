@@ -57,6 +57,7 @@ export default function Competitions() {
                         src={competition.src}
                         width={230}
                         height={230}
+                        priority={true}
                         alt={competition.title}
                       />
                     </div>
@@ -91,6 +92,7 @@ export default function Competitions() {
                       width={230}
                       height={230}
                       alt={competition.title}
+                      priority={true}
                     />
                   </div>
                   <p className="text-center text-4xl text-primary">{competition.title}</p>
@@ -125,6 +127,7 @@ export default function Competitions() {
           src="/comp/10.svg"
           width={90}
           height={90}
+          priority={true}
           alt="Previous Competition"
           className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
         />
@@ -138,6 +141,7 @@ export default function Competitions() {
           src="/comp/9.svg"
           width={90}
           height={90}
+          priority={true}
           alt="Previous Competition"
           className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
         />

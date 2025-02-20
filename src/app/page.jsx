@@ -33,6 +33,7 @@ export default function Home() {
             alt="ALSA English Competition 2025"
             height={480}
             width={700}
+            priority={true}
           />
         </BlurFade>
       </div>

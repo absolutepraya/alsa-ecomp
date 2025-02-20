@@ -6,7 +6,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Registration() {
   return (
-    <div className="relative flex flex-col items-center gap-y-20 px-6 py-36 lg:px-0 lg:pb-[380px]">
+    <div className="relative flex flex-col items-center gap-y-16 px-6 py-36 lg:px-0 lg:pb-[380px]">
       <div className="justify-centert flex flex-col items-center text-center">
         <BlurFade
           delay={0.3}
@@ -14,7 +14,7 @@ export default function Registration() {
         >
           <GoldText
             text="NOW OPENING:"
-            className="text-3xl font-extrabold lg:text-4xl"
+            className="text-2xl font-extrabold lg:text-3xl mb-2"
           />
         </BlurFade>
 
@@ -26,18 +26,18 @@ export default function Registration() {
             <div className="flex flex-col items-center justify-center gap-y-1">
               <GoldText
                 text="EARLY PHASE"
-                className="text-center text-5xl font-extrabold"
+                className="text-center text-4xl font-extrabold"
               />
               <GoldText
                 text="REGISTRATION"
-                className="text-center text-5xl font-extrabold"
+                className="text-center text-4xl font-extrabold"
               />
             </div>
           </div>
           <div className="hidden lg:block">
             <GoldText
               text="EARLY PHASE REGISTRATION"
-              className="text-center text-6xl font-extrabold"
+              className="text-center text-5xl font-extrabold"
             />
           </div>
         </BlurFade>

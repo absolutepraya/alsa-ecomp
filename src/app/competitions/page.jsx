@@ -103,7 +103,7 @@ export default function Competitions() {
         )}
       </Swiper>
 
-      <div className='flex flex-row items-center justify-center gap-x-16 lg:gap-x-0'>
+      <div className='flex flex-row items-center justify-center gap-x-16 lg:gap-x-0 lg:mt-0 -mt-20'>
         <BlurFade
           delay={0.7}
           offset={15}

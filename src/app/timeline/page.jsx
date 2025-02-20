@@ -14,7 +14,7 @@ export default function Timeline() {
       >
         <GoldText
           text="TIMELINE"
-          className="text-5xl font-extrabold lg:text-6xl"
+          className="text-4xl font-extrabold lg:text-5xl"
         />
       </BlurFade>
 

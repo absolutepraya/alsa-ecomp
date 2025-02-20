@@ -13,7 +13,7 @@ export default function Partners() {
       >
         <GoldText
           text="PARTNERS"
-          className="text-5xl font-extrabold lg:text-6xl"
+          className="text-4xl font-extrabold lg:text-5xl"
         />
       </BlurFade>
 

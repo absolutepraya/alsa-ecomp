@@ -17,12 +17,13 @@ export default function Registration() {
             className="text-3xl font-extrabold lg:text-4xl"
           />
         </BlurFade>
+
         <BlurFade
-          delay={0.4}
+          delay={0.5}
           offset={15}
         >
           <div className="flex flex-col lg:hidden">
-            <div className='flex flex-col gap-y-1 items-center justify-center'>
+            <div className="flex flex-col items-center justify-center gap-y-1">
               <GoldText
                 text="EARLY PHASE"
                 className="text-center text-5xl font-extrabold"
@@ -43,10 +44,10 @@ export default function Registration() {
       </div>
 
       <BlurFade
-        delay={0.5}
+        delay={0.4}
         offset={15}
       >
-        <div className="overflow-hidden rounded-2xl bg-background p-6 shadow-xl h-[80rem] lg:w-[60rem]">
+        <div className="h-[80rem] overflow-hidden rounded-2xl bg-background p-6 shadow-xl lg:w-[60rem]">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdnuv9mrrja-lHq-rXv8xnNz-tMnKH-BpmeFMN3wt8Yekc-LQ/viewform?embedded=true"
             className="h-full w-full"

@@ -5,11 +5,11 @@ export default function Footer() {
     <div className="flex w-full flex-col items-center gap-y-5 bg-background py-5 text-foreground">
       <GoldText
         text="Contact Person"
-        className="text-md font-extrabold lg:text-3xl"
+        className="text-md font-extrabold text-3xl"
       />
 
       <div className="flex w-full flex-col justify-center gap-4 gap-x-6 lg:flex-row">
-        <div className="flex flex-col items-center gap-y-2 lg:lg:w-[20rem]">
+        <div className="flex flex-col items-center gap-y-2 lg:w-[20rem]">
           <GoldText
             text="Sponsorship & In-Kind"
             className="text-2xl font-extrabold"
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-2 grid w-full grid-cols-2 place-items-center gap-4 px-4 lg:grid-cols-5">
+      <div className="mt-2 grid w-full grid-cols-2 gap-4 px-16 lg:flex lg:flex-row lg:justify-center lg:gap-x-4">
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-7 w-7 rounded-full bg-gold" />
           <p className="">@alsaecomp</p>

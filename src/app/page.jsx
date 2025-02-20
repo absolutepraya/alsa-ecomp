@@ -1,3 +1,5 @@
+'use client';
+
 import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
 import Footer from '@/components/footer';
@@ -7,7 +9,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Home() {
   return (
-    <div className="relative flex h-[100vh] flex-col items-center gap-y-20 overflow-x-clip px-0">
+    <div className="relative flex h-[100vh] flex-col items-center gap-y-20 overflow-x-clip lg:px-0 px-6">
       <div className="flex h-full w-full flex-col items-center justify-center">
         <BlurFade
           delay={0.3}

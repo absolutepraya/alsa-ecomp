@@ -6,9 +6,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Registration() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
-      <NavBar currentRoute="home" />
-
+    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 py-36 lg:pb-[420px]">
       <div className="justify-centert flex flex-col items-center text-center">
         <BlurFade
           delay={0.3}
@@ -17,7 +15,7 @@ export default function Registration() {
         >
           <GoldText
             text="NOW OPENING:"
-            className="text-6xl font-extrabold"
+            className="text-[2rem] font-extrabold lg:text-6xl"
           />
         </BlurFade>
         <BlurFade
@@ -27,7 +25,7 @@ export default function Registration() {
         >
           <GoldText
             text="EARLY PHASE REGISTRATION"
-            className="text-6xl font-extrabold"
+            className="text-[1.2rem] font-extrabold lg:text-6xl"
           />
         </BlurFade>
       </div>
@@ -37,7 +35,7 @@ export default function Registration() {
         offset={15}
         inView
       >
-        <div className="bg-background h-[80rem] w-[60rem] overflow-hidden rounded-2xl p-6 shadow-xl">
+        <div className="overflow-hidden rounded-2xl bg-background p-6 shadow-xl lg:h-[80rem] lg:w-[60rem]">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdnuv9mrrja-lHq-rXv8xnNz-tMnKH-BpmeFMN3wt8Yekc-LQ/viewform?embedded=true"
             className="h-full w-full"
@@ -49,8 +47,6 @@ export default function Registration() {
           </iframe>
         </div>
       </BlurFade>
-
-      <Footer />
     </div>
   );
 }

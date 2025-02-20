@@ -7,9 +7,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Timeline() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
-      <NavBar currentRoute="timeline" />
-
+    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 py-36 lg:pb-[420px]">
       <BlurFade
         delay={0.3}
         offset={15}
@@ -55,7 +53,7 @@ export default function Timeline() {
         >
           <div className="flex flex-col items-center justify-center gap-y-4">
             <p className="text-4xl text-primary">PRE-EVENT</p>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-col items-center justify-center lg:flex-row">
               <BlurFade
                 delay={0.6}
                 offset={15}
@@ -120,7 +118,7 @@ export default function Timeline() {
         >
           <div className="flex flex-col items-center justify-center gap-y-4">
             <p className="text-4xl text-primary">MAIN EVENT</p>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-col items-center justify-center lg:flex-row">
               <BlurFade
                 delay={0.7}
                 offset={15}
@@ -158,8 +156,6 @@ export default function Timeline() {
           </div>
         </BlurFade>
       </div>
-
-      <Footer />
     </div>
   );
 }

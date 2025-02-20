@@ -8,8 +8,9 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				kaisar: ['Kaisar', 'Arial', 'Helvetica', 'sans-serif'],
-				tmr: ['Times New Roman']
+				kaisar: ['Sansation', 'Helvetica', 'sans-serif'],
+				tmr: ['Litoland', 'Times New Roman'],
+				h2: ['Quenda', 'Helvetica', 'sans-serif'],
 			},
 			colors: {
 				primary: '#003140',

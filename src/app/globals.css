@@ -4,65 +4,42 @@
 
 /* Font face declarations */
 @font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Litoland';
+  src: url('/fonts/litoland/Litoland Regular.otf') format('opentype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
+  font-family: 'Quenda';
+  src: url('/fonts/quenda/Quenda-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Light.ttf') format('truetype');
+  font-family: 'Sansation';
+  src: url('/fonts/sansation/Sansation_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('/fonts/sansation/Sansation_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('/fonts/sansation/Sansation_Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Light Italic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Medium Italic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kaisar';
-  src: url('/fonts/Kaisar Bold Italic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
 }
 
 body {
   padding: 0;
   margin: 0;
-  /* font-family: 'Jakarta Sans', sans-serif; */
-  /* overscroll-behavior: none; */
   scroll-behavior: smooth;
 }

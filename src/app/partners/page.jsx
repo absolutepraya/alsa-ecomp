@@ -6,7 +6,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Partners() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
+    <div className="relative flex flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
       <BlurFade
         delay={0.3}
         offset={15}
@@ -23,7 +23,7 @@ export default function Partners() {
           offset={15}
         >
           <div className="flex h-full w-full flex-col items-center">
-            <p className="text-3xl text-primary lg:text-4xl">Sponsorship & In-Kind</p>
+            <p className="font-h2 text-3xl text-primary lg:text-4xl">Sponsorship & In-Kind</p>
           </div>
         </BlurFade>
         <BlurFade
@@ -31,7 +31,7 @@ export default function Partners() {
           offset={15}
         >
           <div className="flex h-full w-full flex-col items-center">
-            <p className="text-4xl text-primary">Media Partners</p>
+            <p className="font-h2 text-4xl text-primary">Media Partners</p>
           </div>
         </BlurFade>
       </div>

@@ -3,7 +3,7 @@
 import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,19 +15,19 @@ import Image from 'next/image';
 
 export default function Competitions() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 pb-12 pt-36 lg:pb-0">
+    <div className="relative flex flex-col items-center gap-y-20 px-0 pb-36 pt-36 lg:pb-0">
       <BlurFade
         delay={0.3}
         offset={15}
       >
         <GoldText
           text="COMPETITIONS"
-          className="text-5xl font-extrabold lg:text-6xl"
+          className="text-4xl font-extrabold lg:text-5xl"
         />
       </BlurFade>
 
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation]}
         className="relative flex h-screen w-full items-center justify-center lg:h-[600px]"
         slidesPerView={1}
         centeredSlides={true}
@@ -35,12 +35,6 @@ export default function Competitions() {
         navigation={{
           nextEl: '.swiper-next',
           prevEl: '.swiper-prev',
-        }}
-        pagination={{
-          clickable: true,
-          el: '.swiper-cust-pagination',
-          bulletClass: '.swiper-cust-bullet',
-          bulletActiveClass: '.swiper-cust-bullet-active',
         }}
       >
         {competitionsData.map((competition, index) =>
@@ -66,7 +60,7 @@ export default function Competitions() {
                     delay={0.5}
                     offset={15}
                   >
-                    <p className="text-4xl text-primary">{competition.title}</p>
+                    <p className="font-h2 text-4xl text-primary">{competition.title}</p>
                   </BlurFade>
                   <BlurFade
                     delay={0.6}
@@ -95,7 +89,7 @@ export default function Competitions() {
                       priority={true}
                     />
                   </div>
-                  <p className="text-center text-4xl text-primary">{competition.title}</p>
+                  <p className="font-h2 text-center text-4xl text-primary">{competition.title}</p>
                   <Emboss
                     innerClassName="px-6 py-3 rounded-xl text-justify"
                     toPercent="to-40%"
@@ -107,45 +101,38 @@ export default function Competitions() {
             </SwiperSlide>
           )
         )}
-
-        {/* <div className="swiper-cust-pagination absolute bottom-0 left-1/2 flex -translate-x-1/2 transform gap-x-2">
-          {competitionsData.map((_, index) => (
-            <div
-              key={index}
-              className="swiper-cust-bullet h-2 w-2 rounded-full bg-primary"
-            />
-          ))}
-        </div> */}
       </Swiper>
 
-      <BlurFade
-        delay={0.7}
-        offset={15}
-        className="swiper-prev absolute bottom-28 left-20 z-10 flex h-28 w-28 cursor-pointer items-center justify-center rounded-full lg:left-[20%] lg:top-96"
-      >
-        <Image
-          src="/comp/10.svg"
-          width={90}
-          height={90}
-          priority={true}
-          alt="Previous Competition"
-          className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
-        />
-      </BlurFade>
-      <BlurFade
-        delay={0.8}
-        offset={15}
-        className="swiper-next absolute bottom-28 right-20 z-10 flex h-28 w-28 cursor-pointer items-center justify-center rounded-full lg:right-[20%] lg:top-96"
-      >
-        <Image
-          src="/comp/9.svg"
-          width={90}
-          height={90}
-          priority={true}
-          alt="Previous Competition"
-          className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
-        />
-      </BlurFade>
+      <div>
+        <BlurFade
+          delay={0.7}
+          offset={15}
+          className="swiper-prev z-10 flex h-28 w-28 cursor-pointer items-center justify-center rounded-full lg:absolute lg:left-[20%] lg:top-96"
+        >
+          <Image
+            src="/comp/10.svg"
+            width={90}
+            height={90}
+            priority={true}
+            alt="Previous Competition"
+            className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
+          />
+        </BlurFade>
+        <BlurFade
+          delay={0.8}
+          offset={15}
+          className="swiper-next z-10 flex h-28 w-28 cursor-pointer items-center justify-center rounded-full lg:absolute lg:right-[20%] lg:top-96"
+        >
+          <Image
+            src="/comp/9.svg"
+            width={90}
+            height={90}
+            priority={true}
+            alt="Previous Competition"
+            className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
+          />
+        </BlurFade>
+      </div>
     </div>
   );
 }

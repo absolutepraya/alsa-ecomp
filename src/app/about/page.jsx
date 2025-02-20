@@ -1,21 +1,18 @@
 "use client";
 
-import NavBar from '@/components/navbar';
-import Emboss from '@/components/emboss';
-import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
 import BlurFade from '@/components/blurfade';
 
 export default function About() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center lg:gap-y-20 gap-y-12 overflow-x-clip lg:px-0 px-6 py-36">
+    <div className="relative flex flex-col items-center gap-y-12 overflow-x-clip px-6 py-36 lg:gap-y-20 lg:px-0">
       <BlurFade
         delay={0.3}
         offset={15}
       >
         <GoldText
           text="ABOUT US"
-          className="font-extrabold lg:text-6xl text-5xl"
+          className="text-4xl font-extrabold lg:text-5xl"
         />
       </BlurFade>
 
@@ -26,7 +23,7 @@ export default function About() {
         >
           <GoldText
             text="Our Theme:"
-            className="text-2xl lg:text-4xl"
+            className="text-xl lg:text-2xl"
           />
         </BlurFade>
         <BlurFade
@@ -35,7 +32,7 @@ export default function About() {
         >
           <GoldText
             text="Protecting Biodiversity"
-            className="text-4xl lg:text-6xl"
+            className="text-2xl lg:text-4xl"
           />
         </BlurFade>
         <BlurFade
@@ -53,7 +50,7 @@ export default function About() {
         >
           <GoldText
             text="Our Tagline:"
-            className="text-2xl lg:text-4xl"
+            className="text-xl lg:text-2xl"
           />
         </BlurFade>
         <BlurFade
@@ -62,16 +59,16 @@ export default function About() {
         >
           <GoldText
             text="Embrace Humanity, Protect Biodiversity"
-            className="hidden text-6xl lg:block"
+            className="hidden text-4xl lg:block"
           />
           <div className="flex flex-col items-center lg:hidden">
             <GoldText
               text="Embrace Humanity,"
-              className="text-4xl"
+              className="text-2xl"
             />
             <GoldText
               text="Protect Biodiversity"
-              className="text-4xl"
+              className="text-2xl"
             />
           </div>
         </BlurFade>

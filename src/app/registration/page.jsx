@@ -6,7 +6,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Registration() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-6 py-36 lg:px-0 lg:pb-[380px]">
+    <div className="relative flex flex-col items-center gap-y-20 px-6 py-36 lg:px-0 lg:pb-[380px]">
       <div className="justify-centert flex flex-col items-center text-center">
         <BlurFade
           delay={0.3}

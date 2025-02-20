@@ -9,20 +9,6 @@ export const metadata = {
   icons: {
     icon: '/logo.svg',
   },
-  // other: {
-  //   'link-preload': {
-  //     rel: 'preload',
-  //     href: '/texture.webp',
-  //     as: 'image',
-  //     type: 'image/webp',
-  //   },
-  // 'link-preload-2': {
-  //   rel: 'preload',
-  //   href: '/public/texture.webp',
-  //   as: 'image',
-  //   type: 'image/webp',
-  // },
-  // },
 };
 
 export default function RootLayout({ children }) {
@@ -35,12 +21,6 @@ export default function RootLayout({ children }) {
           as="image"
           type="image/webp"
         />
-        {/* <link
-          rel="preload"
-          href="/public/texture.webp"
-          as="image"
-          type="image/webp"
-        /> */}
       </Head>
       <body className={`relative bg-background font-kaisar font-bold antialiased`}>
         <NavBar />

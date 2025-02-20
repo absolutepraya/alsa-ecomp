@@ -7,7 +7,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Timeline() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 py-36">
+    <div className="relative flex flex-col items-center gap-y-20 px-0 py-36">
       <BlurFade
         delay={0.3}
         offset={15}
@@ -24,7 +24,7 @@ export default function Timeline() {
             delay={0.35}
             offset={15}
           >
-            <p className="text-3xl text-primary lg:text-4xl">REGISTRATION</p>
+            <p className="font-h2 text-3xl text-primary lg:text-4xl">REGISTRATION</p>
           </BlurFade>
           <BlurFade
             delay={0.4}
@@ -48,7 +48,7 @@ export default function Timeline() {
             delay={0.45}
             offset={15}
           >
-            <p className="text-3xl text-primary lg:text-4xl">PRE-EVENT</p>
+            <p className="font-h2 text-3xl text-primary lg:text-4xl">PRE-EVENT</p>
           </BlurFade>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <BlurFade
@@ -119,7 +119,7 @@ export default function Timeline() {
             delay={0.75}
             offset={15}
           >
-            <p className="text-3xl text-primary lg:text-4xl">MAIN EVENT</p>
+            <p className="font-h2 text-3xl text-primary lg:text-4xl">MAIN EVENT</p>
           </BlurFade>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <BlurFade

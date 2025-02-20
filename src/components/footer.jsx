@@ -6,14 +6,14 @@ export default function Footer() {
     <div className="flex w-full flex-col items-center gap-y-5 bg-background py-5 text-foreground">
       <GoldText
         text="Contact Person"
-        className="text-md text-3xl font-extrabold"
+        className="text-md text-2xl font-extrabold"
       />
 
       <div className="flex w-full flex-col justify-center gap-4 gap-x-6 lg:flex-row">
         <div className="flex flex-col items-center gap-y-2 lg:w-[20rem]">
           <GoldText
             text="Sponsorship & In-Kind"
-            className="text-2xl font-extrabold"
+            className="text-xl font-extrabold"
           />
           <div className="flex flex-col items-center gap-y-0 text-center text-sm">
             <p>Faza</p>
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-y-2 lg:w-[20rem]">
           <GoldText
             text="Registration"
-            className="text-2xl font-extrabold"
+            className="text-xl font-extrabold"
           />
           <div className="flex flex-col items-center gap-y-0 text-center text-sm">
             <p>Sherly</p>
@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-y-2 lg:w-[20rem]">
           <GoldText
             text="Media Partner"
-            className="text-2xl font-extrabold"
+            className="text-xl font-extrabold"
           />
           <div className="flex flex-col items-center gap-y-0 text-center text-sm">
             <p>Nana</p>

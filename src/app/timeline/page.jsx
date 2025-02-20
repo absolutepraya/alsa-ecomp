@@ -7,7 +7,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Timeline() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 py-36 lg:pb-[420px]">
+    <div className="relative flex min-h-screen flex-col items-center gap-y-20 px-0 py-36">
       <BlurFade
         delay={0.3}
         offset={15}
@@ -31,8 +31,8 @@ export default function Timeline() {
             offset={15}
           >
             <Emboss
-              innerClassName="rounded-xl w-[16rem] h-20  flex items-center justify-center"
-              outerClassName="w-fit"
+              innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
+              outerClassName="w-fit lg:hover:scale-105 transition-transform"
             >
               <p className="text-center leading-5">
                 NOW:
@@ -56,8 +56,8 @@ export default function Timeline() {
               offset={15}
             >
               <Emboss
-                innerClassName="rounded-xl w-[16rem] h-20  flex items-center justify-center"
-                outerClassName="w-fit"
+                innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
+                outerClassName="w-fit lg:hover:scale-105 transition-transform"
               >
                 <p className="text-center leading-5">
                   Pre-Event:
@@ -78,8 +78,8 @@ export default function Timeline() {
               offset={15}
             >
               <Emboss
-                innerClassName="rounded-xl w-[16rem] h-20  flex items-center justify-center"
-                outerClassName="w-fit"
+                innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
+                outerClassName="w-fit lg:hover:scale-105 transition-transform"
               >
                 <p className="text-center leading-5">
                   Open Registration
@@ -100,8 +100,8 @@ export default function Timeline() {
               offset={15}
             >
               <Emboss
-                innerClassName="rounded-xl w-[16rem] h-20  flex items-center justify-center"
-                outerClassName="w-fit"
+                innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
+                outerClassName="w-fit lg:hover:scale-105 transition-transform"
               >
                 <p className="text-center leading-5">
                   Pre-Event:
@@ -127,8 +127,8 @@ export default function Timeline() {
               offset={15}
             >
               <Emboss
-                innerClassName="rounded-xl w-[16rem] h-20  flex items-center justify-center"
-                outerClassName="w-fit"
+                innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
+                outerClassName="w-fit lg:hover:scale-105 transition-transform"
               >
                 <p className="text-center leading-5">
                   Technical Meeting:
@@ -148,8 +148,8 @@ export default function Timeline() {
               offset={15}
             >
               <Emboss
-                innerClassName="rounded-xl w-[16rem] h-20  flex items-center justify-center"
-                outerClassName="w-fit"
+                innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
+                outerClassName="w-fit lg:hover:scale-105 transition-transform"
               >
                 <p className="text-center leading-5">
                   Main Event:

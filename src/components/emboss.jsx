@@ -1,3 +1,5 @@
+'use client';
+
 export default function Emboss({ children, innerClassName = '', outerClassName = '', toPercent='', viaPercent='' }) {
 	let outerRadius = '';
 

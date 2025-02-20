@@ -19,7 +19,7 @@ export default function Registration() {
         </BlurFade>
 
         <BlurFade
-          delay={0.5}
+          delay={0.4}
           offset={15}
         >
           <div className="flex flex-col lg:hidden">
@@ -44,7 +44,7 @@ export default function Registration() {
       </div>
 
       <BlurFade
-        delay={0.4}
+        delay={0.5}
         offset={15}
       >
         <div className="h-[80rem] overflow-hidden rounded-2xl bg-background p-6 shadow-xl lg:w-[60rem]">

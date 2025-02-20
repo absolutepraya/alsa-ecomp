@@ -43,3 +43,10 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+
+.font-h2 {
+  background-image: linear-gradient(to bottom, #00576e, #003140, #000910);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

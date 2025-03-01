@@ -1,6 +1,4 @@
-import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
-import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
 import Line from '@/components/line';
 import BlurFade from '@/components/blurfade';
@@ -132,8 +130,7 @@ export default function Timeline() {
               >
                 <p className="text-center leading-5">
                   Technical Meeting:
-                  <br />
-                  15 Mei 2025
+                  <br />7 Mei 2025
                 </p>
               </Emboss>
             </BlurFade>
@@ -153,8 +150,7 @@ export default function Timeline() {
               >
                 <p className="text-center leading-5">
                   Main Event:
-                  <br />
-                  15 Mei - 20 Mei 2025
+                  <br />7 Mei - 12 Mei 2025
                 </p>
               </Emboss>
             </BlurFade>

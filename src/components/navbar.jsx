@@ -4,49 +4,81 @@ import { Menu, X } from 'lucide-react';
 import Emboss from './emboss';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
   {
     name: 'Home',
     route: '/',
+    id: 'home',
   },
   {
     name: 'About Us',
     route: '/about',
+    id: 'about',
   },
   {
     name: 'Competitions',
     route: '/competitions',
+    id: 'competitions',
   },
   {
     name: 'Timeline',
     route: '/timeline',
+    id: 'timeline',
   },
   {
     name: 'Partners',
     route: '/partners',
+    id: 'partners',
   },
 ];
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleClick = () => {
-      setShowMenu(false);
-    };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-    if (showMenu) {
-      document.addEventListener('click', handleClick);
-    }
+    navItems.forEach((item) => {
+      const element = document.getElementById(item.id);
+      if (element) observer.observe(element);
+    });
 
     return () => {
-      document.removeEventListener('click', handleClick);
+      navItems.forEach((item) => {
+        const element = document.getElementById(item.id);
+        if (element) observer.unobserve(element);
+      });
     };
-  }, [showMenu]);
+  }, []);
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    if (pathname !== '/') {
+      // If not on homepage, redirect to homepage with hash
+      window.location.href = `/#${id}`;
+    } else {
+      // If on homepage, scroll to section
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setShowMenu(false);
+  };
 
   const handleMenuClick = (e) => {
     e.stopPropagation();
@@ -68,8 +100,9 @@ export default function NavBar() {
         {navItems.map((item) => (
           <a
             key={item.name}
-            href={item.route}
-            className={`relative text-primary transition-transform after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:scale-105 hover:after:scale-x-100 active:scale-95 active:brightness-75 ${pathname === item.route ? 'after:scale-x-100' : ''}`}
+            href={`#${item.id}`}
+            onClick={(e) => handleNavClick(e, item.id)}
+            className={`relative text-primary transition-transform after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:scale-105 hover:after:scale-x-100 active:scale-95 active:brightness-75 ${activeSection === item.id ? 'after:scale-x-100' : ''}`}
           >
             {item.name}
           </a>
@@ -101,7 +134,7 @@ export default function NavBar() {
             ) : (
               <Menu
                 size={40}
-                className="text-primary" 
+                className="text-primary"
                 strokeWidth={2}
                 onClick={handleMenuClick}
               />
@@ -112,7 +145,7 @@ export default function NavBar() {
 
       <AnimatePresence>
         {showMenu && (
-          <motion.div 
+          <motion.div
             className="absolute left-0 top-20 flex w-full flex-col items-center justify-center gap-3 bg-foreground px-4 pb-4 pt-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -122,8 +155,9 @@ export default function NavBar() {
             {navItems.map((item) => (
               <a
                 key={item.name}
-                href={item.route}
-                className={`relative text-primary transition-transform after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:scale-105 hover:after:scale-x-100 active:scale-95 active:brightness-75 ${pathname === item.route ? 'after:scale-x-100' : ''}`}
+                href={`#${item.id}`}
+                onClick={(e) => handleNavClick(e, item.id)}
+                className={`relative text-primary transition-transform after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:scale-105 hover:after:scale-x-100 active:scale-95 active:brightness-75 ${activeSection === item.id ? 'after:scale-x-100' : ''}`}
               >
                 {item.name}
               </a>

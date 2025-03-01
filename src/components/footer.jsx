@@ -28,10 +28,8 @@ export default function Footer() {
             className="text-xl font-extrabold"
           />
           <div className="flex flex-col items-center gap-y-0 text-center text-sm">
-            <p>Sherly</p>
-            <p>082170460200/LINE ID: sherlyfll22</p>
-            <p>Khaira</p>
-            <p>08568246458/LINE ID: khairamihrsyaa</p>
+            <p>General Inquiries</p>
+            <p>085123537004</p>
           </div>
         </div>
         <div className="flex flex-col items-center gap-y-2 lg:w-[20rem]">
@@ -52,13 +50,18 @@ export default function Footer() {
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-8 w-8 rounded-full">
             <Image
-              src="/social/1.webp"
+              src="/social/4.webp"
               width={32}
               height={32}
-              alt="LINE ALSA LC UI"
+              alt="Instagram ALSA LC UI"
             />
           </div>
-          <p className="">@alsaecomp</p>
+          <a
+            href="https://www.instagram.com/alsalcui/"
+            className="underline decoration-[1px] underline-offset-[3px]"
+          >
+            @alsaecomp
+          </a>
         </div>
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-8 w-8 rounded-full">
@@ -92,22 +95,7 @@ export default function Footer() {
             @alsaecomp
           </a>
         </div>
-        <div className="flex flex-row items-center gap-x-1 text-xs">
-          <div className="h-8 w-8 rounded-full">
-            <Image
-              src="/social/4.webp"
-              width={32}
-              height={32}
-              alt="Instagram ALSA LC UI"
-            />
-          </div>
-          <a
-            href="https://www.instagram.com/alsalcui/"
-            className="underline decoration-[1px] underline-offset-[3px]"
-          >
-            @alsaecomp
-          </a>
-        </div>
+
         <div className="flex flex-row items-center gap-x-1 text-xs">
           <div className="h-8 w-8 rounded-full">
             <Image
@@ -121,7 +109,7 @@ export default function Footer() {
             href="https://www.alsaecomp.com"
             className="underline decoration-[1px] underline-offset-[3px]"
           >
-            alsaecomp.com
+            alsaecomp.id
           </a>
         </div>
       </div>

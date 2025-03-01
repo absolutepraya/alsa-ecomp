@@ -8,8 +8,9 @@ export default function Partners() {
   return (
     <div className="relative flex flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
       <BlurFade
-        delay={0.3}
+        delay={0.2}
         offset={15}
+        inView
       >
         <GoldText
           text="PARTNERS"
@@ -19,16 +20,18 @@ export default function Partners() {
 
       <div className="flex h-[30rem] w-full max-w-[70rem] flex-col justify-between text-center lg:flex-row">
         <BlurFade
-          delay={0.4}
+          delay={0.2}
           offset={15}
+          inView
         >
           <div className="flex h-full w-full flex-col items-center">
             <p className="font-h2 text-3xl text-primary lg:text-4xl">Sponsorship & In-Kind</p>
           </div>
         </BlurFade>
         <BlurFade
-          delay={0.5}
+          delay={0.2}
           offset={15}
+          inView
         >
           <div className="flex h-full w-full flex-col items-center">
             <p className="font-h2 text-4xl text-primary">Media Partners</p>

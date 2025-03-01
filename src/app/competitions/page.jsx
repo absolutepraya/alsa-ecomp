@@ -17,8 +17,9 @@ export default function Competitions() {
   return (
     <div className="relative flex flex-col items-center gap-y-20 px-0 pb-36 pt-36 lg:pb-0">
       <BlurFade
-        delay={0.3}
+        delay={0.2}
         offset={15}
+        inView
       >
         <GoldText
           text="COMPETITIONS"
@@ -43,8 +44,9 @@ export default function Competitions() {
               <div className="relative h-full w-full">
                 <div className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-y-6 px-8 lg:w-[700px]">
                   <BlurFade
-                    delay={0.4}
+                    delay={0.2}
                     offset={15}
+                    inView
                   >
                     <div className="h-56 w-56">
                       <Image
@@ -57,14 +59,16 @@ export default function Competitions() {
                     </div>
                   </BlurFade>
                   <BlurFade
-                    delay={0.5}
+                    delay={0.2}
                     offset={15}
+                    inView
                   >
                     <p className="font-h2 text-4xl text-primary">{competition.title}</p>
                   </BlurFade>
                   <BlurFade
-                    delay={0.6}
+                    delay={0.2}
                     offset={15}
+                    inView
                   >
                     <Emboss
                       innerClassName="px-6 py-3 rounded-xl text-justify"
@@ -105,8 +109,9 @@ export default function Competitions() {
 
       <div className='flex flex-row items-center justify-center gap-x-16 lg:gap-x-0 lg:mt-0 -mt-20'>
         <BlurFade
-          delay={0.7}
+          delay={0.2}
           offset={15}
+          inView
           className="swiper-prev z-10 flex h-28 w-28 cursor-pointer items-center justify-center rounded-full lg:absolute lg:left-[20%] lg:top-96"
         >
           <Image
@@ -119,8 +124,9 @@ export default function Competitions() {
           />
         </BlurFade>
         <BlurFade
-          delay={0.8}
+          delay={0.2}
           offset={15}
+          inView
           className="swiper-next z-10 flex h-28 w-28 cursor-pointer items-center justify-center rounded-full lg:absolute lg:right-[20%] lg:top-96"
         >
           <Image

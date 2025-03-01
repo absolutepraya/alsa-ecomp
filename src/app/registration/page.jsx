@@ -9,8 +9,9 @@ export default function Registration() {
     <div className="relative flex flex-col items-center gap-y-16 px-6 py-36 lg:px-0 lg:pb-[380px]">
       <div className="justify-centert flex flex-col items-center text-center">
         <BlurFade
-          delay={0.3}
+          delay={0.2}
           offset={15}
+          inView
         >
           <GoldText
             text="NOW OPENING:"
@@ -19,8 +20,9 @@ export default function Registration() {
         </BlurFade>
 
         <BlurFade
-          delay={0.4}
+          delay={0.2}
           offset={15}
+          inView
         >
           <div className="flex flex-col lg:hidden">
             <div className="flex flex-col items-center justify-center gap-y-1">
@@ -44,8 +46,9 @@ export default function Registration() {
       </div>
 
       <BlurFade
-        delay={0.5}
+        delay={0.2}
         offset={15}
+        inView
       >
         <div className="h-[80rem] overflow-hidden rounded-2xl bg-background p-6 shadow-xl lg:w-[60rem]">
           <iframe

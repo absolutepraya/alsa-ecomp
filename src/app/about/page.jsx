@@ -7,8 +7,9 @@ export default function About() {
   return (
     <div className="relative flex flex-col items-center gap-y-12 overflow-x-clip px-6 py-36 lg:gap-y-20 lg:px-0">
       <BlurFade
-        delay={0.3}
+        delay={0.2}
         offset={15}
+        inView
       >
         <GoldText
           text="ABOUT US"
@@ -18,8 +19,9 @@ export default function About() {
 
       <div className="flex flex-col items-center justify-center">
         <BlurFade
-          delay={0.4}
+          delay={0.2}
           offset={15}
+          inView
         >
           <GoldText
             text="Our Theme:"
@@ -27,8 +29,9 @@ export default function About() {
           />
         </BlurFade>
         <BlurFade
-          delay={0.5}
+          delay={0.2}
           offset={15}
+          inView
         >
           <GoldText
             text="Protecting Biodiversity"
@@ -36,8 +39,9 @@ export default function About() {
           />
         </BlurFade>
         <BlurFade
-          delay={0.6}
+          delay={0.2}
           offset={15}
+          inView
         >
           <p className="text-md mt-4 max-w-[50rem] px-4 text-justify text-foreground">The importance of biodiversity cannot be understated. The food we eat, the clothes we wear, and even the air we breathe is all the result of a healthy biodiversity. Unfortunately, over the last few years, human activity has caused a massive decline, with activities such as the clearing of forests for commercial use, overexploitation of natural resources, and all highly destructive towards biodiversity. Because of this, it is important for us to be aware of our responsibility to preserve and protect biodiversity, as its destruction could mean the destruction of mankind as a whole.</p>
         </BlurFade>
@@ -45,8 +49,9 @@ export default function About() {
 
       <div className="flex flex-col items-center justify-center">
         <BlurFade
-          delay={0.7}
+          delay={0.2}
           offset={15}
+          inView
         >
           <GoldText
             text="Our Tagline:"
@@ -54,8 +59,9 @@ export default function About() {
           />
         </BlurFade>
         <BlurFade
-          delay={0.8}
+          delay={0.2}
           offset={15}
+          inView
         >
           <GoldText
             text="Embrace Humanity, Protect Biodiversity"
@@ -73,8 +79,9 @@ export default function About() {
           </div>
         </BlurFade>
         <BlurFade
-          delay={0.9}
+          delay={0.2}
           offset={15}
+          inView
         >
           <p className="text-md mt-4 max-w-[50rem] px-4 text-justify text-foreground">Our tagline refers to the goal of our event. As our future champions continue to learn and evolve as they progress through our competitions, we hope that the knowledge they have gained will give them the empathy needed to build a realization for their role in protecting the biodiversity around us. As human activity continues to destroy the world around us, this year's ALSA E-Comp brings on the theme of Protecting Biodiversity in hopes of preserving it.</p>
         </BlurFade>

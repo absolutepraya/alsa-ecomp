@@ -7,8 +7,9 @@ export default function Timeline() {
   return (
     <div className="relative flex flex-col items-center gap-y-20 px-0 py-36">
       <BlurFade
-        delay={0.3}
+        delay={0.2}
         offset={15}
+        inView
       >
         <GoldText
           text="TIMELINE"
@@ -19,14 +20,16 @@ export default function Timeline() {
       <div className="flex max-w-[70rem] flex-col gap-y-12">
         <div className="flex flex-col items-center justify-center gap-y-4">
           <BlurFade
-            delay={0.35}
+            delay={0.2}
             offset={15}
+            inView
           >
             <p className="font-h2 text-3xl text-primary lg:text-4xl">REGISTRATION</p>
           </BlurFade>
           <BlurFade
-            delay={0.4}
+            delay={0.2}
             offset={15}
+            inView
           >
             <Emboss
               innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
@@ -43,15 +46,17 @@ export default function Timeline() {
         </div>
         <div className="flex flex-col items-center justify-center gap-y-4">
           <BlurFade
-            delay={0.45}
+            delay={0.2}
             offset={15}
+            inView
           >
             <p className="font-h2 text-3xl text-primary lg:text-4xl">PRE-EVENT</p>
           </BlurFade>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <BlurFade
-              delay={0.5}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Emboss
                 innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
@@ -66,14 +71,16 @@ export default function Timeline() {
               </Emboss>
             </BlurFade>
             <BlurFade
-              delay={0.55}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Line />
             </BlurFade>
             <BlurFade
-              delay={0.6}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Emboss
                 innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
@@ -88,14 +95,16 @@ export default function Timeline() {
               </Emboss>
             </BlurFade>
             <BlurFade
-              delay={0.65}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Line />
             </BlurFade>
             <BlurFade
-              delay={0.7}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Emboss
                 innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
@@ -114,15 +123,17 @@ export default function Timeline() {
         </div>
         <div className="flex flex-col items-center justify-center gap-y-4">
           <BlurFade
-            delay={0.75}
+            delay={0.2}
             offset={15}
+            inView
           >
             <p className="font-h2 text-3xl text-primary lg:text-4xl">MAIN EVENT</p>
           </BlurFade>
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <BlurFade
-              delay={0.8}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Emboss
                 innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"
@@ -135,14 +146,16 @@ export default function Timeline() {
               </Emboss>
             </BlurFade>
             <BlurFade
-              delay={0.85}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Line />
             </BlurFade>
             <BlurFade
-              delay={0.9}
+              delay={0.2}
               offset={15}
+              inView
             >
               <Emboss
                 innerClassName="rounded-xl w-[16rem] h-20 flex items-center justify-center"

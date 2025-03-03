@@ -1,6 +1,3 @@
-import NavBar from '@/components/navbar';
-import Emboss from '@/components/emboss';
-import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
 import BlurFade from '@/components/blurfade';
 
@@ -15,7 +12,7 @@ export default function Registration() {
         >
           <GoldText
             text="NOW OPENING:"
-            className="text-2xl font-extrabold lg:text-3xl mb-2"
+            className="mb-2 text-2xl font-extrabold lg:text-3xl"
           />
         </BlurFade>
 
@@ -50,9 +47,9 @@ export default function Registration() {
         offset={15}
         inView
       >
-        <div className="h-[80rem] overflow-hidden rounded-2xl bg-background p-6 shadow-xl lg:w-[60rem]">
+        <div className="h-[80rem] w-[60rem] max-w-[90%] overflow-hidden rounded-2xl bg-background p-6 shadow-xl lg:max-w-full">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdnuv9mrrja-lHq-rXv8xnNz-tMnKH-BpmeFMN3wt8Yekc-LQ/viewform?embedded=true"
+            src="https://forms.gle/CY6CRDiWdbAS91gA8"
             className="h-full w-full"
             frameBorder="0"
             marginHeight="0"

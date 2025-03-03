@@ -1,6 +1,4 @@
 'use client';
-
-import NavBar from '@/components/navbar';
 import Emboss from '@/components/emboss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -8,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { competitionsData } from './data';
-import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
 import BlurFade from '@/components/blurfade';
 import Image from 'next/image';
@@ -36,6 +33,7 @@ export default function Competitions() {
           nextEl: '.swiper-next',
           prevEl: '.swiper-prev',
         }}
+        loop={true}
       >
         {competitionsData.map((competition, index) =>
           index === 0 ? (
@@ -89,7 +87,7 @@ export default function Competitions() {
                       priority={true}
                     />
                   </div>
-                  <p className="font-h2 text-center text-4xl text-primary">{competition.title}</p>
+                  <p className="text-center font-h2 text-4xl text-primary">{competition.title}</p>
                   <Emboss
                     innerClassName="px-6 py-3 rounded-xl text-justify"
                     toPercent="to-40%"
@@ -103,7 +101,7 @@ export default function Competitions() {
         )}
       </Swiper>
 
-      <div className='flex flex-row items-center justify-center gap-x-16 lg:gap-x-0 lg:mt-0 -mt-20'>
+      <div className="-mt-20 flex flex-row items-center justify-center gap-x-16 lg:mt-0 lg:gap-x-0">
         <BlurFade
           delay={0.7}
           offset={15}

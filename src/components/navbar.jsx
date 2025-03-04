@@ -108,7 +108,9 @@ export default function NavBar() {
           </a>
         ))}
         <a
-          href="registration"
+          href="https://forms.gle/CY6CRDiWdbAS91gA8"
+          target="_blank"
+          rel="noopener noreferrer"
           className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
         >
           <Emboss innerClassName="px-3 py-0.5 text-lg rounded-full">Registration</Emboss>
@@ -163,7 +165,9 @@ export default function NavBar() {
               </a>
             ))}
             <a
-              href="registration"
+              href="https://forms.gle/CY6CRDiWdbAS91gA8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-all hover:scale-105 active:scale-95 active:brightness-75"
             >
               <Emboss innerClassName="px-3 py-0.5 text-lg rounded-full">Registration</Emboss>

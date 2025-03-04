@@ -26,7 +26,7 @@ export default function Competitions() {
 
       <Swiper
         modules={[Navigation]}
-        className="relative flex h-[740px] w-full items-center justify-center lg:h-[600px]"
+        className="relative flex h-[740px] w-full items-center justify-center lg:h-[500px]"
         slidesPerView={1}
         centeredSlides={true}
         centeredSlidesBounds={true}

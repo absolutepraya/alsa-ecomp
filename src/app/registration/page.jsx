@@ -1,7 +1,13 @@
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import GoldText from '@/components/goldtext';
 import BlurFade from '@/components/blurfade';
+import Emboss from '@/components/emboss';
 
-export default function Registration() {
+// Original component saved for future reference
+const RegistrationPage = () => {
   return (
     <div className="relative flex flex-col items-center gap-y-16 px-6 py-36 lg:px-0 lg:pb-[380px]">
       <div className="justify-centert flex flex-col items-center text-center">
@@ -59,6 +65,24 @@ export default function Registration() {
           </iframe>
         </div>
       </BlurFade>
+    </div>
+  );
+};
+
+// Redirect component that will be used instead
+export default function Registration() {
+  const router = useRouter();
+  
+  useEffect(() => {
+    // Redirect to the external form URL
+    window.location.href = "https://forms.gle/CY6CRDiWdbAS91gA8";
+  }, []);
+
+  return (
+    <div className="flex h-screen items-center justify-center text-foreground">
+      <Emboss innerClassName="px-6 py-3 rounded-xl text-justify">
+        <p className="text-lg">Redirecting to registration form...</p>
+      </Emboss>
     </div>
   );
 }

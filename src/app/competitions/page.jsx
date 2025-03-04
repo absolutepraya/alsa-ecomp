@@ -26,7 +26,7 @@ export default function Competitions() {
 
       <Swiper
         modules={[Navigation]}
-        className="relative flex h-[740px] w-full items-center justify-center lg:h-[600px]"
+        className="relative flex h-[740px] w-full items-center justify-center lg:h-[500px]"
         slidesPerView={1}
         centeredSlides={true}
         centeredSlidesBounds={true}
@@ -105,7 +105,7 @@ export default function Competitions() {
         )}
       </Swiper>
 
-      <div className="-mt-20 flex flex-row items-center justify-center gap-x-16 lg:mt-0 lg:gap-x-0">
+      <div className="-mt-24 flex flex-row items-center justify-center gap-x-16 lg:mt-0 lg:gap-x-0">
         <BlurFade
           delay={0.2}
           offset={15}
@@ -137,6 +137,16 @@ export default function Competitions() {
           />
         </BlurFade>
       </div>
+
+      <a
+        href="https://bit.ly/RnRALSAE-Comp2025"
+        target="_blank"
+        className="transition-all hover:scale-105 active:scale-95 lg:-mt-32 -mt-12"
+      >
+        <Emboss innerClassName="flex w-[13rem] text-2xl items-center justify-center h-fit text-center py-3 rounded-xl leading-none">
+          <p>Rules and Regulations</p>
+        </Emboss>
+      </a>
     </div>
   );
 }

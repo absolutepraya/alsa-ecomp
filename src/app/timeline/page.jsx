@@ -39,7 +39,7 @@ export default function Timeline() {
                 NOW:
                 <br />
                 Early Phase Registration
-                <br />3 Maret - 9 Maret 2025
+                <br />4 Maret - 9 Maret 2025
               </p>
             </Emboss>
           </BlurFade>
@@ -66,7 +66,7 @@ export default function Timeline() {
                   Pre-Event:
                   <br />
                   Golden Tickets
-                  <br />4 Maret - 18 Maret 2025
+                  <br />5 Maret - 18 Maret 2025
                 </p>
               </Emboss>
             </BlurFade>

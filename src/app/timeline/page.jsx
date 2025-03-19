@@ -38,8 +38,8 @@ export default function Timeline() {
               <p className="text-center leading-5">
                 NOW:
                 <br />
-                Early Phase Registration
-                <br />4 Maret - 9 Maret 2025
+                Normal Phase Registration
+                <br />11 Maret - 25 Maret 2025
               </p>
             </Emboss>
           </BlurFade>

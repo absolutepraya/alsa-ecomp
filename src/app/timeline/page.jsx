@@ -39,7 +39,8 @@ export default function Timeline() {
                 NOW:
                 <br />
                 Normal Phase Registration
-                <br />11 Maret - 25 Maret 2025
+                <br />
+                11 Maret - 6 April 2025
               </p>
             </Emboss>
           </BlurFade>

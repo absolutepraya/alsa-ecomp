@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
             backgroundSize: '500px',
           }}
         />
-        <div>{children}</div>
+        <div className="pb-32">{children}</div>
 
         <Footer />
       </body>

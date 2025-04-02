@@ -57,7 +57,7 @@ export default function Footer() {
             />
           </div>
           <a
-            href="https://www.instagram.com/alsalcui/"
+            href="https://www.instagram.com/alsaecomp/"
             className="underline decoration-[1px] underline-offset-[3px]"
           >
             @alsaecomp

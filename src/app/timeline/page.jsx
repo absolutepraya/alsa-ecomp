@@ -38,9 +38,9 @@ export default function Timeline() {
               <p className="text-center leading-5">
                 NOW:
                 <br />
-                Late Phase Registration
+                Extended Registration
                 <br />
-                27 Maret - 6 April 2025
+                8 April - 15 April 2025
               </p>
             </Emboss>
           </BlurFade>

@@ -105,7 +105,7 @@ export default function Accomodation() {
         </BlurFade>
       </div>
       <a
-        href="https://bit.ly/AccommodationE-Comp2025"
+        href="http://bit.ly/AccommodationE-Comp2025"
         target="_blank"
         className="transition-all hover:scale-105 active:scale-95"
       >

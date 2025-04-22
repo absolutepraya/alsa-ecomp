@@ -144,7 +144,7 @@ export default function Competitions() {
         className="-mt-12 transition-all hover:scale-105 active:scale-95 lg:-mt-32"
       >
         <Emboss innerClassName="flex w-[13rem] text-2xl items-center justify-center h-fit text-center py-3 rounded-xl leading-none">
-          <p>Rules and Regulations</p>
+          <p>Detailed Informations</p>
         </Emboss>
       </a>
     </div>

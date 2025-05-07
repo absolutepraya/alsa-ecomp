@@ -105,12 +105,12 @@ export default function Accomodation() {
         </BlurFade>
       </div>
       <a
-        href="https://bit.ly/AccommodationE-Comp2025"
+        href="http://bit.ly/AccommodationE-Comp2025"
         target="_blank"
         className="transition-all hover:scale-105 active:scale-95"
       >
         <Emboss innerClassName="flex px-4 rounded-full text-2xl items-center justify-center h-fit text-center py-3 leading-none">
-          <p>Register yourself here!</p>
+          <p>Accommodation</p>
         </Emboss>
       </a>
     </div>

@@ -139,12 +139,12 @@ export default function Competitions() {
       </div>
 
       <a
-        href="https://bit.ly/RnRALSAE-Comp2025"
+        href="https://drive.google.com/drive/folders/1Tn1_I1eqZhiGzXBdLfLafVgySmcKqQ0m?usp=sharing"
         target="_blank"
-        className="transition-all hover:scale-105 active:scale-95 lg:-mt-32 -mt-12"
+        className="-mt-12 transition-all hover:scale-105 active:scale-95 lg:-mt-32"
       >
         <Emboss innerClassName="flex w-[13rem] text-2xl items-center justify-center h-fit text-center py-3 rounded-xl leading-none">
-          <p>Rules and Regulations</p>
+          <p>Detailed Informations</p>
         </Emboss>
       </a>
     </div>

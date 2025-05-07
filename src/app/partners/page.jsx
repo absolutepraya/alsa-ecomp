@@ -1,12 +1,9 @@
-import NavBar from '@/components/navbar';
-import Emboss from '@/components/emboss';
-import Footer from '@/components/footer';
 import GoldText from '@/components/goldtext';
 import BlurFade from '@/components/blurfade';
 
 export default function Partners() {
   return (
-    <div className="relative flex flex-col items-center gap-y-20 px-0 pb-[420px] pt-36">
+    <div className="relative flex flex-col items-center gap-y-20 px-0 pt-36">
       <BlurFade
         delay={0.2}
         offset={15}
@@ -18,23 +15,39 @@ export default function Partners() {
         />
       </BlurFade>
 
-      <div className="flex h-[30rem] w-full max-w-[70rem] flex-col justify-between text-center lg:flex-row">
+      <div className="flex h-[36rem] w-full max-w-[70rem] flex-row justify-between">
         <BlurFade
           delay={0.2}
           offset={15}
           inView
+          className="w-1/2"
         >
-          <div className="flex h-full w-full flex-col items-center">
-            <p className="font-h2 text-3xl text-primary lg:text-4xl">Sponsorship & In-Kind</p>
+          <div className="relative flex h-full w-full flex-col items-center">
+            <p className="absolute left-1/2 top-0 -translate-x-1/2 text-nowrap font-h2 text-3xl text-primary lg:text-4xl">Sponsorship &amp; In&#8209;Kind</p>
+            <div className="mt-16 flex h-full w-full flex-col items-center justify-center">
+              <img
+                src="/sponsor.svg"
+                alt="Sponsor"
+                className="w-full"
+              />
+            </div>
           </div>
         </BlurFade>
         <BlurFade
           delay={0.2}
           offset={15}
           inView
+          className="w-1/2"
         >
-          <div className="flex h-full w-full flex-col items-center">
-            <p className="font-h2 text-4xl text-primary">Media Partners</p>
+          <div className="relative flex h-full w-full flex-col items-center">
+            <p className="absolute left-1/2 top-0 -translate-x-1/2 text-nowrap font-h2 text-3xl text-primary lg:text-4xl">Media Partners</p>
+            <div className="mt-16 flex h-full w-full flex-col items-center justify-center">
+              <img
+                src="/media.svg"
+                alt="Media"
+                className="w-full"
+              />
+            </div>
           </div>
         </BlurFade>
       </div>

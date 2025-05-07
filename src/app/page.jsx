@@ -5,6 +5,7 @@ import About from './about/page';
 import Competitions from './competitions/page';
 import Timeline from './timeline/page';
 import Accomodation from './accomodation/page';
+import Partners from './partners/page';
 
 export default function Home() {
   return (
@@ -50,9 +51,9 @@ export default function Home() {
       <div id="timeline">
         <Timeline />
       </div>
-      {/* <div id="partners">
+      <div id="partners">
         <Partners />
-      </div> */}
+      </div>
       <div id="accomodation">
         <Accomodation />
       </div>

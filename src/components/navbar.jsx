@@ -28,11 +28,11 @@ const navItems = [
     route: '/timeline',
     id: 'timeline',
   },
-  // {
-  //   name: 'Partners',
-  //   route: '/partners',
-  //   id: 'partners',
-  // },
+  {
+    name: 'Partners',
+    route: '/partners',
+    id: 'partners',
+  },
   {
     name: 'Accomodation',
     route: '/accomodation',

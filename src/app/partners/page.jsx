@@ -3,7 +3,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Partners() {
   return (
-    <div className="relative flex flex-col items-center gap-y-20 px-0 pt-36 lg:pb-12 pb-56">
+    <div className="relative flex flex-col items-center gap-y-20 px-0 pt-36 lg:pb-16 pb-56">
       <BlurFade
         delay={0.2}
         offset={15}

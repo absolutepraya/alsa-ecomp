@@ -91,7 +91,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="fixed top-0 !z-[100] flex h-20 w-full items-center justify-between bg-foreground px-4 shadow-xl lg:px-16">
+    <div className="fixed top-0 !z-[100] flex h-20 w-full items-center justify-between bg-foreground px-4 shadow-xl tablet:px-16">
       <a href="/">
         <Image
           src="/logo.svg"
@@ -101,7 +101,7 @@ export default function NavBar() {
           priority={true}
         />
       </a>
-      <div className="hidden items-center justify-between gap-x-12 text-lg lg:flex">
+      <div className="hidden items-center justify-between gap-x-12 text-lg tablet:flex">
         {navItems.map((item) => (
           <a
             key={item.name}
@@ -122,7 +122,7 @@ export default function NavBar() {
         </a>
       </div>
 
-      <div className="flex items-center justify-between gap-x-12 text-lg lg:hidden">
+      <div className="flex items-center justify-between gap-x-12 text-lg tablet:hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={showMenu ? 'close' : 'menu'}

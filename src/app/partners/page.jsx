@@ -3,7 +3,7 @@ import BlurFade from '@/components/blurfade';
 
 export default function Partners() {
   return (
-    <div className="relative flex flex-col items-center gap-y-20 px-0 pt-36">
+    <div className="relative flex flex-col items-center gap-y-20 px-0 pt-36 lg:pb-12 pb-56">
       <BlurFade
         delay={0.2}
         offset={15}
@@ -15,14 +15,14 @@ export default function Partners() {
         />
       </BlurFade>
 
-      <div className="flex h-[36rem] w-full max-w-[70rem] flex-row justify-between">
+      <div className="flex h-auto w-full max-w-[70rem] flex-col gap-4 lg:h-[32rem] lg:flex-row lg:justify-between tablet:px-0 px-8">
         <BlurFade
           delay={0.2}
           offset={15}
           inView
-          className="w-1/2"
+          className="w-full lg:w-1/2"
         >
-          <div className="relative flex h-full w-full flex-col items-center">
+          <div className="relative mb-16 flex h-full w-full flex-col items-center lg:mb-0">
             <p className="absolute left-1/2 top-0 -translate-x-1/2 text-nowrap font-h2 text-3xl text-primary lg:text-4xl">Sponsorship &amp; In&#8209;Kind</p>
             <div className="mt-16 flex h-full w-full flex-col items-center justify-center">
               <img
@@ -37,7 +37,7 @@ export default function Partners() {
           delay={0.2}
           offset={15}
           inView
-          className="w-1/2"
+          className="w-full lg:w-1/2"
         >
           <div className="relative flex h-full w-full flex-col items-center">
             <p className="absolute left-1/2 top-0 -translate-x-1/2 text-nowrap font-h2 text-3xl text-primary lg:text-4xl">Media Partners</p>
